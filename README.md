@@ -1,2 +1,2 @@
-# Cat-Interpreter-
+# Cat-Interpreter
 CLI for Cat Lang
