@@ -47,3 +47,16 @@ def kickLoop(lineTokens, lineNumber, outFile, tabIndent):
 	return tabIndent
 
 
+def userInput(lst,lineNumber,outFile):
+        
+        variable  = lst[1]
+        
+        printArgStr = ""
+        printArgList = lst[3:]
+        for each in printArgList:
+                printArgStr = printArgStr + each + " "
+        
+        printedOut = variable+"=raw_input(" + '"' + printArgStr + '"' + ")\n"
+        outFile.write(printedOut)        
+          
+          
